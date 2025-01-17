@@ -1,0 +1,9 @@
+.HeroBack {
+  background-image: url("assets/images/HeroSectBackImg.png");
+  background-size: cover;
+  background-position: 50% 80%;
+}
+
+.h-100 {
+  height: 28rem;
+}

@@ -1,0 +1,78 @@
+.custom-slider-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* .slide img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+} */
+
+.large-slide img {
+  height: 350px;
+  /* Larger size for the active slide */
+  /* transform: scale(1, 1); */
+  transition: 0.5s;
+  width: 100% !important;
+}
+
+.small-slide img {
+  height: 300px;
+  /* Smaller size for other slides */
+  transition: 0.5s;
+  width: 100% !important;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.slick-dots {
+  bottom: -25px;
+}
+
+.slick-prev {
+  left: 20px !important;
+  display: none !important;
+}
+
+.slick-next {
+  right: 30px !important;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0) !important;
+  opacity: 0.4 !important;
+}
+
+.slick-list {
+  height: 356px;
+}
+
+.slick-dots {
+  bottom: 20px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #b88e2f;
+  font-size: 10px;
+  border: 2px solid #b88e2f;
+  border-radius: 100px;
+  line-height: 19px;
+}
